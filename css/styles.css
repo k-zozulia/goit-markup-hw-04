@@ -1,3 +1,5 @@
+
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -30,6 +32,12 @@ ul {
 
 img {
   display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .container {
@@ -89,16 +97,6 @@ img {
   gap: 40px;
 }
 
-.nav-list,
-.contact-list,
-.features-list,
-.team-list,
-.portfolio-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-
 .nav-link {
   color: #2e2f42;
   font-weight: 500;
@@ -124,6 +122,22 @@ img {
   background-color: #2e2f42;
   letter-spacing: 0.02em;
   padding: 188px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("/images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section,
+.header,
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -272,6 +286,8 @@ img {
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
 }
 
 .team-list .team-member:last-child {
@@ -283,13 +299,15 @@ img {
   text-align: center;
 }
 
-.team-member-name {
+.team-member-name,
+.team-member-role {
   margin-bottom: 8px;
 }
 
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  width: 100%;
 }
 
 .footer-logo {
@@ -304,4 +322,45 @@ img {
 .footer-description {
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.social-media-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px transparent;
+  background-color: #4D5AE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: #404BBF;
+}
+
+.social-icon {
+  fill: #F4F4FD;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

@@ -1,0 +1,307 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #434455;
+  line-height: 1.5;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  margin-right: 76px;
+}
+
+.span-header {
+  color: #2e2f42;
+}
+
+.contact-info {
+  font-style: normal;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-info .contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list,
+.contact-list,
+.features-list,
+.team-list,
+.portfolio-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #2e2f42;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-item .nav-link {
+  padding: 24px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.contact-link:active,
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+.hero {
+  background-color: #2e2f42;
+  letter-spacing: 0.02em;
+  padding: 188px 0;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+  line-height: 1.07;
+  max-width: 496px;
+  margin: 0 auto;
+}
+
+.order-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--button-bg-color, #4d5ae5);
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-top: 48px;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #404bbf;
+}
+
+.hero-title,
+.feature-title,
+.team-title,
+.team-member-name,
+.portfolio-main-title,
+.portfolio-title {
+  letter-spacing: 0.02em;
+}
+
+.feature-title,
+.team-member-name,
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features {
+  padding: 120px 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.features-list .feature-item:last-child {
+  margin-right: 0;
+}
+
+.feature-title {
+  margin-bottom: 8px;
+}
+
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.portfolio-main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list .portfolio-item:last-child {
+  margin-right: 0;
+}
+
+.portfolio-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-title {
+  margin-bottom: 8px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-member {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.team-list .team-member:last-child {
+  margin-right: 0;
+}
+
+.member-text {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-member-name {
+  margin-bottom: 8px;
+}
+
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.span-footer {
+  color: #f4f4fd;
+}
+
+.footer-description {
+  color: #f4f4fd;
+  max-width: 264px;
+}
